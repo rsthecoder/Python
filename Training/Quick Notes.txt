@@ -1,0 +1,13 @@
+isnumeric()
+
+def fonksiyon(liste):
+    for i in liste:
+        try:
+            assert str(i).isnumeric()
+            #İddianın doğru olduğu durumda, bu aralıkta yeni işlemler de tanımlanabilir.
+        except AssertionError:
+            print("{} karakteri sayı değil.".format(repr(i)))
+
+liste = [1, 2, 3, 4, 5, "a"]
+fonksiyon(liste)
+
