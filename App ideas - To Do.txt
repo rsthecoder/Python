@@ -1,0 +1,2 @@
+- Learn Python app
+- Codewars -> Training
