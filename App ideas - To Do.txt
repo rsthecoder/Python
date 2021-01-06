@@ -1,2 +1,5 @@
 - Learn Python app
 - Codewars -> Training
+- Twitter python data scrapping
+- Youtube video-mp3 downloader
+- 
