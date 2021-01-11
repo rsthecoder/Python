@@ -1,4 +1,5 @@
 from random import randint
+import time
 
 #Oyuncularin isimlerini aliyoruz
 oyuncu_1_isim = input("Ilk oyuncunun ismini giriniz: ")
@@ -24,17 +25,20 @@ while True:
                 print(oyuncu_1_isim + " hamlesi: " + hamle_oyuncu_1 + " --> Bu elin kazanani: " + oyuncu_1_isim)
                 print(oyuncu_2_isim + " hamlesi: " + hamle_oyuncu_2 + "\n")
                 skor_oyuncu_1 += 1
+                time.sleep(1)
             # Oyuncu 2'nin kazandigi durumlar belirleniyor
             elif(hamle_oyuncu_2 == "Tas" and hamle_oyuncu_1 == "Makas") or (hamle_oyuncu_2 == "Kagit" and hamle_oyuncu_1 == "Tas") or (hamle_oyuncu_2 == "Makas" and hamle_oyuncu_1 == "Kagit") :
                 print(oyuncu_1_isim + " hamlesi: " + hamle_oyuncu_1 )
                 print(oyuncu_2_isim + " hamlesi: " + hamle_oyuncu_2 + "--> Bu elin kazanani: " + oyuncu_2_isim  + "\n")
                 skor_oyuncu_2 += 1
+                time.sleep(1)
             # Her iki durum da gerceklesmemis ise Berabere durumu olusuyor
             else:
                 print(oyuncu_1_isim + " hamlesi: " + hamle_oyuncu_1 + "--> Berabere")
                 print(oyuncu_2_isim + " hamlesi: " + hamle_oyuncu_2 + "--> Berabere" + "\n")
                 skor_oyuncu_1 += 1
                 skor_oyuncu_2 += 1
+                time.sleep(1)
         # Oyuncu 1'in skoru 10 olursa kazandigi mesaji yayinlaniyor
         elif skor_oyuncu_1 == 10 and skor_oyuncu_2 < 10:
             print("-"*50)
