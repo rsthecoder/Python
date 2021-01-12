@@ -2,4 +2,6 @@
 - Codewars -> Training
 - Twitter python data scrapping
 - Youtube video-mp3 downloader
+- De-Het app (Dutch Language) and save searches to a file/database
+- Google translate app
 - 
