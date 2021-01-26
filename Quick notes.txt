@@ -1,0 +1,3 @@
+How to seperate list items coma seperated?
+
+print(','.join(map(str,list_name)))
